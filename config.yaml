@@ -1,7 +1,7 @@
 model_list:
   - model_name: mistral-7b-instruct
     litellm_params:
-      model: mistralai/mistral-7b-instruct
+      model: mistralai/mistral-7b-instruct:free
       api_base: https://openrouter.ai/api/v1
       api_key: os.environ/OPENROUTER_API_KEY
       rpm: 60
