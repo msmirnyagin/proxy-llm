@@ -7,14 +7,15 @@ model_list:
     litellm_params:
       model: huggingface/mistralai/Mistral-7B-Instruct-v0.1
       rpm: 60
-  - model_name: dbrx-instruct
-    litellm_params:
-      model: huggingface/databricks/dbrx-instruct
-      rpm: 60
   - model_name: claude-3-sonnet
     litellm_params:
       model: anthropic/claude-3-sonnet-20240229
       rpm: 60
+  - model_name: claude-3-haiku
+    litellm_params:
+      model: anthropic/claude-3-haiku-20240307
+      rpm: 60
+
       
 litellm_settings:
   drop_params: True
