@@ -1,0 +1,29 @@
+model_list:
+  - model_name: mistral-7b-instruct
+    litellm_params:
+      model: mistralai/mistral-7b-instruct
+      api_base: https://openrouter.ai/api/v1
+      api_key: os.environ/OPENROUTER_API_KEY
+      rpm: 60
+ 
+litellm_settings:
+  drop_params: True
+  # max_budget: 100 
+  # budget_duration: 30d
+  num_retries: 5
+  request_timeout: 600
+  telemetry: False
+  # context_window_fallbacks: [{"gpt-3.5-turbo": ["gpt-3.5-turbo-large"]}]
+
+general_settings: 
+  master_key: os.environ/MASTER_API_KEY
+  proxy_budget_rescheduler_min_time: 60
+  proxy_budget_rescheduler_max_time: 64
+  proxy_batch_write_at: 1
+  # database_url: "postgresql://<user>:<password>@<host>:<port>/<dbname>" # [OPTIONAL] use for token-based auth to proxy
+
+# environment_variables:
+  # settings for using redis caching
+  # REDIS_HOST: redis-16337.c322.us-east-1-2.ec2.cloud.redislabs.com
+  # REDIS_PORT: "16337"
+  # REDIS_PASSWORD: 
