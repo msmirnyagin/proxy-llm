@@ -11,9 +11,9 @@ model_list:
     litellm_params:
       model: groq/mixtral-8x7b-32768
       rpm: 60
-  - model_name: octopus
+  - model_name: mistral-7B-function
     litellm_params:
-      model: huggingface/NexaAIDev/Octopus-v2
+      model: huggingface/Trelis/Mistral-7B-Instruct-v0.1-function-calling-v2
       rpm: 60
   - model_name: claude-3-sonnet
     litellm_params:
