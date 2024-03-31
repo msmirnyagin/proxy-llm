@@ -11,9 +11,9 @@ model_list:
     litellm_params:
       model: groq/mixtral-8x7b-32768
       rpm: 60
-  - model_name: Llama-2-7B-function
+  - model_name: Llama-2-7b
     litellm_params:
-      model: huggingface/Trelis/Llama-2-7b-chat-hf-function-calling-v3
+      model: cloudflare/@cf/meta/llama-2-7b-chat-fp16
       rpm: 60
   - model_name: claude-3-sonnet
     litellm_params:
