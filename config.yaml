@@ -5,11 +5,15 @@ model_list:
       rpm: 60
   - model_name: mistral-7b-instruct
     litellm_params:
-      model: huggingface/mistralai/Mistral-7B-Instruct-v0.1
+      model: huggingface/mistralai/Mistral-7B-Instruct-v0.2
       rpm: 60
   - model_name: mistral-8x7b
     litellm_params:
       model: groq/mixtral-8x7b-32768
+      rpm: 60
+  - model_name: octopus
+    litellm_params:
+      model: huggingface/NexaAIDev/Octopus-v2
       rpm: 60
   - model_name: claude-3-sonnet
     litellm_params:
